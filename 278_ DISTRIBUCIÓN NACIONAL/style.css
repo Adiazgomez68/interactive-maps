@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 250, 243);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 51%;
+    margin-top: -10px;
+}
+
+.container path:hover {
+    cursor: pointer;
+    fill: rgb(221, 221, 221);
+}
+
+.container a:focus path {
+    fill: rgb(221, 221, 221);
+    stroke: #3f3f3f;
+}
+
+.container #Colombia:hover path {
+    cursor:auto;
+    fill: #8443ee;
+}
+
+
+.text-box {
+    position: absolute;
+    background: rgb(235, 235, 235);
+    box-shadow: rgb(207, 207, 207) .5px .5px 4px;
+    width: 17%;
+    height: 165px;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    text-align: left;
+    padding-left: 12px;
+
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 5px 5px;
+    transition: ease-in .2s;
+}
+
+.text-box span {
+    background-color: rgb(255, 123, 0);
+    border-radius: 0px 0px 70px 70px;
+    padding: 5px;
+    color: white;
+    position: relative;
+    left: 205px;
+    top: 4px;
+}
+
+.text-box span:hover {
+    background-color: rgb(255, 169, 89);
+    cursor: pointer;
+}
+
+

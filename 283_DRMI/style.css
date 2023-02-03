@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 250, 243);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 70%;
+}
+
+.container .st5:hover {
+    cursor: pointer;
+    fill: #c2225f;
+}
+
+.container .group-drmi {
+    animation: bounce-down 2s linear infinite;
+}
+
+@keyframes bounce-down {
+    25% {
+        transform: translateX(-1.5px);
+    }
+    50%, 100% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(.1.5px);
+    }
+}
+
+.bs-tooltip-right .arrow::before {
+    border-right-color: rgb(235, 235, 235);
+    box-shadow: rgb(207, 207, 207) .5px .5px 4px;
+}

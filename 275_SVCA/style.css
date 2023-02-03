@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 250, 243);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 55%;
+    transition: transform .3s;
+}
+
+.container:hover {
+    transform: scale(2.3);   
+    margin-top: 320px;
+}
+
+.container .st5:hover {
+    cursor: pointer;
+    fill: #ffa46f;
+}
+
+.bs-tooltip-right .arrow::before {
+    border-right-color: rgb(235, 235, 235);
+    box-shadow: rgb(207, 207, 207) .5px .5px 4px;
+}

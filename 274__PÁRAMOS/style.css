@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 250, 243);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 51%;
+}
+
+.container .group-param {
+    animation: bounce-down 2s linear infinite;
+}
+
+@keyframes bounce-down {
+    25% {
+        transform: translateY(-2px);
+    }
+    50%, 100% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(2px);
+    }
+}
+
+.container .group-param .st12:hover {
+    fill: #c2225f;
+}
+
+
+.bs-tooltip-right .arrow::before {
+    border-right-color: rgb(235, 235, 235);
+    box-shadow: rgb(207, 207, 207) .5px .5px 4px;
+}

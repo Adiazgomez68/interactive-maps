@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 250, 243);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container {
+    width: 47.5%;
+    position: relative;
+    left: 170px;
+}
+
+.container .group-esp {
+    animation: bounce-down 2s linear infinite;
+}
+
+@keyframes bounce-down {
+    25% {
+        transform: translateY(-1.5px);
+    }
+    50%, 100% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(1.5px);
+    }
+}
+
+.container .group-esp:hover {
+    fill: #d61660;
+    stroke: #ff906e;
+}
+
+.bs-tooltip-right .arrow::before {
+    border-right-color: rgb(235, 235, 235);
+    box-shadow: rgb(207, 207, 207) .5px .5px 4px;
+}
+
+
+/* ------------------------------------------------------------------ */
+
+.note-map {
+    position: absolute;
+    background-color: rgb(245, 245, 245);
+    border-radius: 2px 2px;
+    box-shadow: rgba(128, 128, 128, 0.308) 1px 1px 5px;
+    left: 210px;
+    top: 60px;
+    width: 24%;
+    font-size: 10.5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px;
+}
+
+.note-map h6 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.note-map p {
+    margin-bottom: 0;
+}
